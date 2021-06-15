@@ -1,0 +1,431 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  background-color: #222;
+  position: sticky;
+  top: 0;
+  left: 0;
+  filter: blur(-10px);
+}
+.navbar {
+  background-position: center;
+  background-size: cover;
+  background-image: url(img/fast-food.svg);
+  width: 70px;
+  height: 70px;
+  margin: 20px 0px 0 20px;
+}
+.logo {
+  width: 20%;
+  padding: 4% 0 0 0;
+  color: #fff;
+}
+.communication {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.communication i {
+  padding: 0 15px;
+  font-size: 23px;
+}
+.communication ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  align-items: center;
+}
+.btn {
+  margin: 15px;
+  padding: 10px;
+  background-color: rgba(255, 255, 0, 0.808);
+  outline: none;
+  border: none;
+}
+.btn_register {
+  padding: 10px;
+  background: none;
+  color: #fff;
+  transition: all 0.5s;
+  border: 1px solid #fff;
+}
+.btn_register:hover {
+  background-color: rgba(255, 255, 0, 0.808);
+  border: 1px solid #222;
+  color: #222;
+}
+.search_panel {
+  display: flex;
+  /* flex-direction: column; */
+  padding: 40px 0px;
+  margin: 0px 40px;
+  font-size: 25px;
+  color: #fff;
+}
+.search_panel i {
+  margin: 2px 10px;
+}
+.banner {
+  width: 100%;
+  height: 600px;
+  border-bottom: 2px solid rgb(124, 122, 122);
+  background-color: #222;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.text_banner {
+  width: 40%;
+  height: 500px;
+  color: #fff;
+  padding: 5% 20%;
+}
+
+.text_banner h1 {
+  width: 320px;
+  line-height: 1.2;
+  font-size: 36px;
+}
+.text_banner p {
+  width: 280px;
+  line-height: 1.5;
+  margin: 30px 0;
+  font-size: 18px;
+  color: #999;
+}
+.text_banner button {
+  padding: 15px 20px;
+  width: 110px;
+  background: none;
+  border: none;
+  color: #fff;
+  outline: none;
+  border: 1px solid#fff;
+  font-family: sans-serif;
+  transition: all 0.6s;
+}
+.text_banner button:hover {
+  background-color: rgba(255, 255, 0, 0.808);
+  cursor: pointer;
+}
+.img_banner {
+  width: 60%;
+  height: 500px;
+}
+.img_banner img {
+  width: 550px;
+  height: 450px;
+  margin: 30px 90px;
+}
+.sections__food {
+  width: 100%;
+  height: 600px;
+  background-color: #222;
+  overflow: hidden;
+}
+.logo_recipes {
+  color: #fff;
+  padding: 50px;
+  font-size: 25px;
+}
+.name__food {
+  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+}
+.section_img_food {
+  padding: 40px 0px;
+  text-align: center;
+  cursor: pointer;
+}
+.section_img_food:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.section_img_food img {
+  margin: 0px 35px;
+}
+.section_img_food h1 {
+  padding: 10px;
+  color: #fff;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+.section_img_food p {
+  color: #fff;
+}
+.section_img_food p > span {
+  color: yellow;
+}
+.banner__restaurant {
+  width: 100%;
+  height: 920px;
+  background-image: url(img/bg.jpg);
+  background-size: cover;
+}
+.img__restaurant {
+  text-align: center;
+  padding: 40px 0;
+}
+.img__restaurant img {
+  padding: 40px 0;
+}
+.img__restaurant h1 {
+  padding: 20px 0;
+  font-size: 40px;
+}
+.img__restaurant p {
+  max-width: 48%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about_best_food {
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+.best_food {
+  width: 35%;
+  height: 500px;
+  background-color: #222;
+  color: #fff;
+  font-family: sans-serif;
+  margin: 10px 50px;
+  padding: 40px 10px;
+}
+.best_food h1 {
+  padding: 15px;
+  text-align: center;
+}
+.best_food p {
+  width: 300px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+}
+.best_food button {
+  font-size: 20px;
+  background: none;
+  outline: none;
+  border: none;
+  padding: 15px;
+  color: #fff;
+  font-weight: 500;
+}
+.best_food button:hover {
+  color: yellow;
+  cursor: pointer;
+}
+.img_best_food {
+  width: 30%;
+  height: 500px;
+  background-color: #ffc107;
+  margin: 80px 60px;
+}
+.img_best_food img {
+  width: 350px;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  pointer-events: none;
+  margin: 80px 0px 0px 80px;
+}
+.blog_restaurant {
+  width: 100%;
+  height: 800px;
+}
+.logo_blog {
+  text-align: center;
+  padding-top: 5%;
+}
+
+.logo_blog h1 {
+  font-size: 45px;
+  padding: 15px;
+}
+.logo_blog p {
+  padding: 20px;
+}
+.option_menu {
+  width: 100%;
+  height: 200px;
+  display: flex;
+}
+.recept__fast_food {
+  width: 100%;
+  height: 530px;
+  padding: 30px 60px;
+
+  margin: 5px;
+}
+.recept__fast_food:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.recept__fast_food img {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  width: 300px;
+  height: 200px;
+}
+
+.recept__fast_food h2 {
+  padding: 15px 0px;
+  font-size: 20px;
+}
+.recept__fast_food p {
+  width: 70%;
+  line-height: 1.5;
+  color: grey;
+}
+.client_restaurant {
+  width: 100%;
+  height: 900px;
+}
+.logo_client {
+  text-align: center;
+  padding: 50px;
+}
+.logo_client h1 {
+  font-size: 45px;
+  padding: 20px;
+}
+.img_client_blog {
+  width: 100%;
+  height: 400px;
+  text-align: center;
+}
+.color_ckient {
+  background-color: #222;
+  padding: 40px 10px;
+  border-radius: 20px;
+}
+.img__client {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img__client h1 {
+  color: #fff;
+  padding: 10px;
+}
+.img__client p {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+footer {
+  width: 100%;
+  height: 900px;
+  background-color: #d8b00f;
+}
+.sections_footer {
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+.footer_header {
+  width: 50%;
+
+  text-align: center;
+  padding-top: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.footer_header h1 {
+  font-size: 50px;
+  padding: 15px;
+  margin-left: 65px;
+}
+.footer_header h1 > span {
+  color: #fff;
+}
+.footer_header input {
+  width: 40%;
+  padding: 15px 0px;
+  margin: 5px;
+}
+.footer_header button {
+  padding: 15px 35px;
+  margin: 10px;
+  outline: none;
+  margin-right: 180px;
+  transition: all 0.4s;
+}
+.footer_header button:hover {
+  background-color: #222;
+  color: #fff;
+}
+.img__footer {
+  margin-top: 190px;
+
+  width: 50%;
+}
+.img__footer img {
+  width: 60%;
+  height: 100%;
+}
+.logo_footer_spicy {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+.links_ ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 10px;
+}
+.links_ ul > li {
+  padding: 10px;
+  font-weight: 600;
+}
+.home {
+  color: #fff;
+}
+.links_ ul > li:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.newsleter{
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  margin: 20px;
+}
+.newsleter label{
+  color: #fff;
+  font-weight: 400;
+  padding: 0 10px ;
+  font-size: 20px
+}
+.newsleter input{
+  padding: 10px 30px;
+  /* width: 100px; */
+  outline: none;
+}
+.btn__input{
+  color: #fff;
+  background-color: #222;
+}
+.btn__input:hover{
+  background-color: #fff;
+  color: #222;
+}
